@@ -6,20 +6,6 @@ import matplotlib.pyplot as plt
 import datetime
 
 '''
-The S&P 500 index (SPX) tracks the performance of 500 of the largest companies listed on 
-US exchanges, such as the New York Stock Exchange (NYSE) and Nasdaq. The S&P 500, also known as the US 500, 
-can be used as a live indicator for the strength of US equities. Follow the S&P 500 price using the real-time chart and 
-stay up to date with the latest S&P 500 forecast, news and analysis articles.
-
-The S&P 500 is considered an effective representation for the economy due to its inclusion of around 500 companies, which covers all 
-areas of the United States and across all industries. In contrast, the Dow Jones Industrial Average (DJIA) is comprised of 30 companies, 
-leading to a more narrow reflection. Further, the DJIA is a price-weighted index, so the largest weighted components are determined by its stock 
-price rather than some fundamental measure.7﻿
-
-The S&P 500 is a broader representation, having more stocks and covering every industry. 
-The DJIA is limited and the movement of a stock in the DJIA can have a greater impact than that of the S&P 500. 
-The largest weighted stock in the S&P 500 likely has a smaller weighting than the largest weighted stock in the DJIA. 
-The movement of a few companies can have a profound impact on the DJIA.
 
 df = pd.read_csv(r'/Users/deannaweisel/Documents/Visual_Studios/US_covidcases_transposed.csv')
 us_count = df.sum(numeric_only=True)
