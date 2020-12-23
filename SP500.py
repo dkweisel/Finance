@@ -53,8 +53,6 @@ us_count.index = pd.to_datetime(us_count.index)
 df_corr= df.corr()
 print
 
-
-
 # comparative plot of US counts vs SP500 close
 us_count.plot(label='US Count of Confirmed Cases', color='ForestGreen')
 close.plot(secondary_y=True, label='S&P 500 Close')
