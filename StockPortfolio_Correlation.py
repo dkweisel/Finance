@@ -27,7 +27,6 @@ portfolio = ['AAPL', 'AMZN', 'FB', 'NFLX', 'GOOG', 'GOOGL']
 data = yf.download(portfolio,'2015-1-1')['Adj Close']
 # calculates daily return 
 
-
 daily_return = (data/data.shift(1)) - 1
 # drops NA values
 data.dropna(inplace=True) 
