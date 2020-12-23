@@ -18,14 +18,7 @@ gspc.to_csv('gspc.csv')
 # read csv - data pulled from yahoo finance
 gspc = pd.read_csv('gspc.csv', parse_dates=True, index_col=0)
 print(gspc)
-'''
-# moving average
-gspc['30ma'] = gspc['Adj Close'].rolling(window=30, min_periods=0).mean()
-gspc.dropna(inplace=True)
-#ax1.plot(df.index, df['Adj Close'])
-#ax1.plot(df.index, df['30ma'])
-#ax2.bar(df.index, df['Volume'])
-'''
+
 # open, high, low, close
 gspc_ohlc = gspc['Adj Close'].resample('10D').ohlc()
 gspc_volume = gspc['Volume'].resample('10D').sum()
